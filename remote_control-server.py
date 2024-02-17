@@ -2,6 +2,7 @@ from argparse import ArgumentParser
 from utils.input_data import INPUT_DATA
 import signal
 import socket
+from time import sleep
 
 def signal_handler(sig, frame):
     print("Closing...")
@@ -40,4 +41,5 @@ while True:
                 input = INPUT_DATA(int.from_bytes(input, 'little'))
                 print(f'Received {input} from {client}')
         print("Connection closed.")
+        sleep(0.5)
 
