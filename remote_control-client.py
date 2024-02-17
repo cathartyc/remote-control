@@ -54,7 +54,7 @@ while True:
         while True:
             try:
                 c_input = controller.read()
-                so.sendall(c_input.value.to_bytes(1))
+                so.sendall(c_input.value.to_bytes(1, 'little'))
                 print(f'Sent {c_input}')
             except OSError:
                 controller = get_controller()
