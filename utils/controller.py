@@ -4,8 +4,6 @@ from typing import Dict
 from utils.input_data import INPUT_DATA
 from utils.inputs import inputs
 
-inputs
-
 class Controller(ABC):
     values: Dict[str,INPUT_DATA]
     @abstractmethod
