@@ -1,0 +1,3 @@
+[submodule "utils/inputs"]
+	path = utils/inputs
+	url = git@github.com-cathartyc:cathartyc/inputs.git
