@@ -10,7 +10,7 @@ def signal_handler(sig, frame):
 
 signal.signal(signal.SIGINT, signal_handler)
 
-HOST = '0.0.0.0'
+HOST = ''
 PORT = 1234
 
 parser = ArgumentParser()
